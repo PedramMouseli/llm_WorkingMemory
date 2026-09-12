@@ -1,0 +1,134 @@
+{
+  "locked_alpha.log": {
+    "layer": 20,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.5304568527918782,
+    "probe_th_test_bal_acc": 0.74264682361973,
+    "probe_th_test_auroc": 0.8099689719147848,
+    "transfer_auroc": 0.4961104645315172,
+    "transfer_auroc_ci": [
+      0.45171017311946676,
+      0.5387766173311599
+    ],
+    "transfer_bal_acc_original_boundary": 0.5087245139876719,
+    "transfer_bal_acc_recalibrated": 0.5102779319274879,
+    "majority_pred_fraction": 0.9204737732656514,
+    "constant_predictor": false,
+    "regex_target": 0.7275873960084487
+  },
+  "locked_beta.log": {
+    "layer": 30,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.5050761421319797,
+    "probe_th_test_bal_acc": 0.71535976742308,
+    "probe_th_test_auroc": 0.752168295243479,
+    "transfer_auroc": 0.5761199158184083,
+    "transfer_auroc_ci": [
+      0.5451635734195258,
+      0.6072909881605294
+    ],
+    "transfer_bal_acc_original_boundary": 0.49912811922862177,
+    "transfer_bal_acc_recalibrated": 0.5327586206896552,
+    "majority_pred_fraction": 0.9974619289340102,
+    "constant_predictor": true,
+    "regex_target": 0.7552763819095477
+  },
+  "locked_gamma.log": {
+    "layer": 30,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.5126903553299492,
+    "probe_th_test_bal_acc": 0.700357767530609,
+    "probe_th_test_auroc": 0.734886309429162,
+    "transfer_auroc": 0.5680234690135681,
+    "transfer_auroc_ci": [
+      0.5337915775671739,
+      0.5987151486892338
+    ],
+    "transfer_bal_acc_original_boundary": 0.5403001237623762,
+    "transfer_bal_acc_recalibrated": 0.5326928163199595,
+    "majority_pred_fraction": 0.7868020304568528,
+    "constant_predictor": false,
+    "regex_target": 0.7587579070407041
+  },
+  "locked_report.txt": {
+    "layer": 20,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.6565143824027073,
+    "probe_th_test_bal_acc": 0.7883480707395498,
+    "probe_th_test_auroc": 0.8409163987138263,
+    "transfer_auroc": 0.5229387791376771,
+    "transfer_auroc_ci": [
+      0.4889703364998464,
+      0.5567513155132647
+    ],
+    "transfer_bal_acc_original_boundary": 0.47518536387181964,
+    "transfer_bal_acc_recalibrated": 0.5181340968742543,
+    "majority_pred_fraction": 0.7690355329949239,
+    "constant_predictor": false,
+    "regex_target": 0.7132128891371692
+  },
+  "exists_alpha.log": {
+    "layer": 8,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.6065989847715736,
+    "probe_th_test_bal_acc": 0.8019456558201945,
+    "probe_th_test_auroc": 0.8589231801408923,
+    "transfer_auroc": 0.3998800257944542,
+    "transfer_auroc_ci": [
+      0.3566112165774176,
+      0.44059542262987367
+    ],
+    "transfer_bal_acc_original_boundary": 0.5,
+    "transfer_bal_acc_recalibrated": 0.557909604519774,
+    "majority_pred_fraction": 1.0,
+    "constant_predictor": true
+  },
+  "exists_beta.log": {
+    "layer": 8,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.6582064297800339,
+    "probe_th_test_bal_acc": 0.7066915049560241,
+    "probe_th_test_auroc": 0.7899361301130812,
+    "transfer_auroc": 0.41945264577871666,
+    "transfer_auroc_ci": [
+      0.365719418824913,
+      0.468823196149126
+    ],
+    "transfer_bal_acc_original_boundary": 0.5005949502405254,
+    "transfer_bal_acc_recalibrated": 0.5560247747747749,
+    "majority_pred_fraction": 0.9983079526226735,
+    "constant_predictor": true
+  },
+  "exists_gamma.log": {
+    "layer": 8,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.560067681895093,
+    "probe_th_test_bal_acc": 0.6974407171775593,
+    "probe_th_test_auroc": 0.7560327099800785,
+    "transfer_auroc": 0.5296101557053219,
+    "transfer_auroc_ci": [
+      0.4706141729668988,
+      0.590734341353534
+    ],
+    "transfer_bal_acc_original_boundary": 0.5274866372298397,
+    "transfer_bal_acc_recalibrated": 0.5425609628830834,
+    "majority_pred_fraction": 0.6269035532994924,
+    "constant_predictor": false
+  },
+  "exists_report.txt": {
+    "layer": 8,
+    "n_target_turns": 1182,
+    "base_rate_target": 0.739424703891709,
+    "probe_th_test_bal_acc": 0.7332319632828971,
+    "probe_th_test_auroc": 0.8395585738539897,
+    "transfer_auroc": 0.5246515498231745,
+    "transfer_auroc_ci": [
+      0.46263855755305444,
+      0.5799570430178762
+    ],
+    "transfer_bal_acc_original_boundary": 0.5,
+    "transfer_bal_acc_recalibrated": 0.5002211375949707,
+    "majority_pred_fraction": 1.0,
+    "constant_predictor": true
+  }
+}

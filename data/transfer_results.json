@@ -1,0 +1,94 @@
+{
+  "locked_alpha.log": {
+    "best_layer": 20,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.533500837520938,
+    "label_distribution_terse": {
+      "0": 557,
+      "1": 637
+    },
+    "probe_th_to_th_test": 0.74264682361973,
+    "probe_th_to_terse": 0.5145754476352066,
+    "regex_terse": 0.759852484012525
+  },
+  "locked_beta.log": {
+    "best_layer": 30,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.509212730318258,
+    "label_distribution_terse": {
+      "0": 586,
+      "1": 608
+    },
+    "probe_th_to_th_test": 0.71535976742308,
+    "probe_th_to_terse": 0.5,
+    "regex_terse": 0.7588243218968924
+  },
+  "locked_gamma.log": {
+    "best_layer": 30,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.5134003350083752,
+    "label_distribution_terse": {
+      "0": 613,
+      "1": 581
+    },
+    "probe_th_to_th_test": 0.700357767530609,
+    "probe_th_to_terse": 0.544499133799238,
+    "regex_terse": 0.7874761689498615
+  },
+  "locked_report.txt": {
+    "best_layer": 20,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.5343383584589615,
+    "label_distribution_terse": {
+      "0": 556,
+      "1": 638
+    },
+    "probe_th_to_th_test": 0.7883480707395498,
+    "probe_th_to_terse": 0.533986603820392,
+    "regex_terse": 0.7759832886042264
+  },
+  "exists_alpha.log": {
+    "best_layer": 8,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.5376884422110553,
+    "label_distribution_terse": {
+      "0": 642,
+      "1": 552
+    },
+    "probe_th_to_th_test": 0.8019456558201945,
+    "probe_th_to_terse": 0.5
+  },
+  "exists_beta.log": {
+    "best_layer": 8,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.5829145728643216,
+    "label_distribution_terse": {
+      "0": 696,
+      "1": 498
+    },
+    "probe_th_to_th_test": 0.7066915049560241,
+    "probe_th_to_terse": 0.5
+  },
+  "exists_gamma.log": {
+    "best_layer": 8,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.5217755443886097,
+    "label_distribution_terse": {
+      "0": 623,
+      "1": 571
+    },
+    "probe_th_to_th_test": 0.6974407171775593,
+    "probe_th_to_terse": 0.48876545049236364
+  },
+  "exists_report.txt": {
+    "best_layer": 8,
+    "usable_terse_turns": 1194,
+    "base_rate_terse": 0.6164154103852596,
+    "label_distribution_terse": {
+      "0": 458,
+      "1": 736
+    },
+    "probe_th_to_th_test": 0.7332319632828971,
+    "probe_th_to_terse": 0.5
+  }
+}

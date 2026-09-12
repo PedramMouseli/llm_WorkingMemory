@@ -1,0 +1,134 @@
+{
+  "locked_alpha.log": {
+    "layer": 20,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.533500837520938,
+    "probe_th_test_bal_acc": 0.74264682361973,
+    "probe_th_test_auroc": 0.8099689719147848,
+    "transfer_auroc": 0.5185268693860641,
+    "transfer_auroc_ci": [
+      0.4701461848089277,
+      0.5665385303677171
+    ],
+    "transfer_bal_acc_original_boundary": 0.5145754476352066,
+    "transfer_bal_acc_recalibrated": 0.4856245442817881,
+    "majority_pred_fraction": 0.9790619765494137,
+    "constant_predictor": false,
+    "regex_target": 0.759852484012525
+  },
+  "locked_beta.log": {
+    "layer": 30,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.509212730318258,
+    "probe_th_test_bal_acc": 0.71535976742308,
+    "probe_th_test_auroc": 0.752168295243479,
+    "transfer_auroc": 0.6207786958864738,
+    "transfer_auroc_ci": [
+      0.5868343534892216,
+      0.6558487204477589
+    ],
+    "transfer_bal_acc_original_boundary": 0.5,
+    "transfer_bal_acc_recalibrated": 0.621730855351545,
+    "majority_pred_fraction": 1.0,
+    "constant_predictor": true,
+    "regex_target": 0.7588243218968924
+  },
+  "locked_gamma.log": {
+    "layer": 30,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.5134003350083752,
+    "probe_th_test_bal_acc": 0.700357767530609,
+    "probe_th_test_auroc": 0.734886309429162,
+    "transfer_auroc": 0.5444598248505558,
+    "transfer_auroc_ci": [
+      0.4975095925192964,
+      0.5909696790274398
+    ],
+    "transfer_bal_acc_original_boundary": 0.544499133799238,
+    "transfer_bal_acc_recalibrated": 0.5398536126779478,
+    "majority_pred_fraction": 0.7529313232830821,
+    "constant_predictor": false,
+    "regex_target": 0.7874761689498615
+  },
+  "locked_report.txt": {
+    "layer": 20,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.5343383584589615,
+    "probe_th_test_bal_acc": 0.7883480707395498,
+    "probe_th_test_auroc": 0.8409163987138263,
+    "transfer_auroc": 0.541967366545635,
+    "transfer_auroc_ci": [
+      0.4987655953143109,
+      0.5856413571850467
+    ],
+    "transfer_bal_acc_original_boundary": 0.533986603820392,
+    "transfer_bal_acc_recalibrated": 0.5114118450362112,
+    "majority_pred_fraction": 0.7269681742043551,
+    "constant_predictor": false,
+    "regex_target": 0.7759832886042264
+  },
+  "exists_alpha.log": {
+    "layer": 8,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.5376884422110553,
+    "probe_th_test_bal_acc": 0.8019456558201945,
+    "probe_th_test_auroc": 0.8589231801408923,
+    "transfer_auroc": 0.5244438236489232,
+    "transfer_auroc_ci": [
+      0.4866650421796626,
+      0.5603904087927821
+    ],
+    "transfer_bal_acc_original_boundary": 0.5,
+    "transfer_bal_acc_recalibrated": 0.5195604395604396,
+    "majority_pred_fraction": 1.0,
+    "constant_predictor": true
+  },
+  "exists_beta.log": {
+    "layer": 8,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.5829145728643217,
+    "probe_th_test_bal_acc": 0.7066915049560241,
+    "probe_th_test_auroc": 0.7899361301130812,
+    "transfer_auroc": 0.3895106287217837,
+    "transfer_auroc_ci": [
+      0.3575339247293863,
+      0.4209135348797273
+    ],
+    "transfer_bal_acc_original_boundary": 0.5,
+    "transfer_bal_acc_recalibrated": 0.5886187297004692,
+    "majority_pred_fraction": 1.0,
+    "constant_predictor": true
+  },
+  "exists_gamma.log": {
+    "layer": 8,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.5217755443886097,
+    "probe_th_test_bal_acc": 0.6974407171775593,
+    "probe_th_test_auroc": 0.7560327099800785,
+    "transfer_auroc": 0.5015011258443833,
+    "transfer_auroc_ci": [
+      0.46674922555927795,
+      0.5378649963336414
+    ],
+    "transfer_bal_acc_original_boundary": 0.48876545049236364,
+    "transfer_bal_acc_recalibrated": 0.49360071600380373,
+    "majority_pred_fraction": 0.9690117252931323,
+    "constant_predictor": false
+  },
+  "exists_report.txt": {
+    "layer": 8,
+    "n_target_turns": 1194,
+    "base_rate_target": 0.6164154103852596,
+    "probe_th_test_bal_acc": 0.7332319632828971,
+    "probe_th_test_auroc": 0.8395585738539897,
+    "transfer_auroc": 0.47624655876210364,
+    "transfer_auroc_ci": [
+      0.44228601902904935,
+      0.512124715511047
+    ],
+    "transfer_bal_acc_original_boundary": 0.5,
+    "transfer_bal_acc_recalibrated": 0.5059809338757666,
+    "majority_pred_fraction": 1.0,
+    "constant_predictor": true
+  }
+}

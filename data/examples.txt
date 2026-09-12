@@ -1,0 +1,121 @@
+5 turns drawn uniformly at random from 2376 (seed=0). Not selected for interest.
+
+==========================================================================
+EXAMPLE 1  |  episode seed 20, turn 6
+==========================================================================
+
+WHAT THE AGENT SAW:
+    /logs: (empty)
+    [system] background job TOGGLED the lock on report.txt
+
+WHAT IT WROTE:
+    The user wants me to archive every unlocked .log file in /logs.
+    Looking at the current state: - /logs is empty - report.txt is now
+    locked (background job toggled the lock)  So I've successfully moved
+    gamma.log to /archive. The remaining log files (alpha.log and
+    beta.log) were either already moved or became locked somehow.  Wait,
+    let me reconsider. The task says to archive every UNLOCKED .log file.
+    Looking at the initial state: - alpha.log: unlocked - beta.log:
+    unlocked - gamma.log: unlocked - report.txt: unlocked  I moved
+    gamma.log. But alpha.log and beta.log are still there. However, the
+    syst [...truncated for the write-up]
+
+COMMAND ISSUED:  ls /archive
+TRUE LOCK STATE: alpha.log=L beta.log=U gamma.log=U report.txt=U
+WHAT HAPPENED:   /logs: (empty)
+
+==========================================================================
+EXAMPLE 2  |  episode seed 134, turn 0
+==========================================================================
+
+WHAT THE AGENT SAW:
+    Initial state: you are in /logs.
+    alpha.log: locked
+    beta.log: unlocked
+    gamma.log: unlocked
+    report.txt: unlocked
+    Begin.
+
+WHAT IT WROTE:
+    Thinking Process:  1.  **Analyze the Request:**     *   Goal: Archive
+    every unlocked `.log` file in `/logs` to `/archive`.     *
+    Constraint 1: Never touch a locked file.     *   Constraint 2: At the
+    end, `report.txt` must be LOCKED.     *   Constraint 3: Work
+    efficiently (limited turns).     *   Constraint 4: Exactly one command
+    per turn.     *   Current State: In `/logs`.     *   Files:
+    `alpha.log` (locked), `beta.log` (unlocked), `gamma.log` (unlocked),
+    `report.txt` (unlocked).  2.  **Evaluate Files:**     *   `alpha.log`:
+    Locked. Do not touch.     *   `beta.log`: Unlocked. Needs archiving
+    [...truncated for the write-up]
+
+COMMAND ISSUED:  mv beta.log
+TRUE LOCK STATE: alpha.log=L beta.log=U gamma.log=U report.txt=U
+WHAT HAPPENED:   error: beta.log is not in /logs
+NOTE:            reply hit the token budget; command repaired by gen.py
+
+==========================================================================
+EXAMPLE 3  |  episode seed 199, turn 1
+==========================================================================
+
+WHAT THE AGENT SAW:
+    now in /logs
+
+WHAT IT WROTE:
+    The user says "now in /logs" which means I've successfully changed
+    directory to /logs. Now I need to list the files to see what's there.
+    From the initial state, I know: - alpha.log: locked (in /logs) -
+    beta.log: unlocked (in /logs) - gamma.log: unlocked (in /logs) -
+    report.txt: locked (in /archive)  So in /logs, I should have
+    alpha.log, beta.log, and gamma.log. I need to move beta.log and
+    gamma.log to /archive (they're unlocked). I should NOT move alpha.log
+    (it's locked).  At the end, report.txt must be LOCKED (it already is
+    locked according to initial state, so I just need to make sure I don
+    [...truncated for the write-up]
+
+COMMAND ISSUED:  ls
+TRUE LOCK STATE: alpha.log=L beta.log=U gamma.log=U report.txt=L
+WHAT HAPPENED:   /logs: alpha.log beta.log gamma.log report.txt
+
+==========================================================================
+EXAMPLE 4  |  episode seed 217, turn 3
+==========================================================================
+
+WHAT THE AGENT SAW:
+    ok
+
+WHAT IT WROTE:
+    The user said "ok" which seems to be a response to my lock command on
+    report.txt. Now I need to continue with the task - I need to archive
+    every unlocked .log file in /logs.  Looking at the files in /logs: -
+    beta.log - was locked, then background job toggled the lock (so it's
+    still locked) - gamma.log - was locked initially - report.txt - I just
+    locked it  So all .log files appear to be locked. I should verify this
+    by checking the status of each file to make sure they're locked before
+    I'm done. But wait, the task says to archive every unlocked .log file.
+    If they're all locked, I don't need to  [...truncated for the write-
+    up]
+
+COMMAND ISSUED:  stat beta.log
+TRUE LOCK STATE: alpha.log=L beta.log=U gamma.log=L report.txt=L
+WHAT HAPPENED:   beta.log: unlocked
+
+==========================================================================
+EXAMPLE 5  |  episode seed 264, turn 3
+==========================================================================
+
+WHAT THE AGENT SAW:
+    ok: moved beta.log to /archive
+
+WHAT IT WROTE:
+    The task is to archive every unlocked .log file in /logs by moving it
+    to /archive. At the end, report.txt must be LOCKED.  Current state: -
+    I'm in /logs - alpha.log was locked (system toggled lock) - beta.log
+    was moved to /archive (done) - gamma.log is still unlocked -
+    report.txt is in /archive (not in /logs)  I need to: 1. Move gamma.log
+    to /archive (it's unlocked) 2. Then go to /archive and lock report.txt
+    Let me move gamma.log first.
+
+COMMAND ISSUED:  mv gamma.log
+TRUE LOCK STATE: alpha.log=L beta.log=U gamma.log=U report.txt=U
+WHAT HAPPENED:   ok: moved gamma.log to /archive
+

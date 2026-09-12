@@ -1,0 +1,143 @@
+{
+  "target": "locked_report.txt",
+  "layer": 20,
+  "conditions": {
+    "clean": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0
+    },
+    "token_corrupt": {
+      "n": 300,
+      "acc_vs_truth": 0.76,
+      "unparseable": 0,
+      "follows_corruption": 0.24
+    },
+    "steer_probe_a+0": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0,
+      "follows_corruption": 0.20333333333333334
+    },
+    "steer_probe_a+4": {
+      "n": 300,
+      "acc_vs_truth": 0.7933333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.20666666666666667
+    },
+    "steer_probe_a-4": {
+      "n": 300,
+      "acc_vs_truth": 0.8,
+      "unparseable": 0,
+      "follows_corruption": 0.2
+    },
+    "steer_probe_a+8": {
+      "n": 300,
+      "acc_vs_truth": 0.7833333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.21666666666666667
+    },
+    "steer_probe_a-8": {
+      "n": 300,
+      "acc_vs_truth": 0.79,
+      "unparseable": 0,
+      "follows_corruption": 0.21
+    },
+    "steer_probe_a+16": {
+      "n": 300,
+      "acc_vs_truth": 0.78,
+      "unparseable": 0,
+      "follows_corruption": 0.22
+    },
+    "steer_probe_a-16": {
+      "n": 300,
+      "acc_vs_truth": 0.7833333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.21666666666666667
+    },
+    "steer_random_a+0": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0,
+      "follows_corruption": 0.20333333333333334
+    },
+    "steer_random_a+4": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0,
+      "follows_corruption": 0.20333333333333334
+    },
+    "steer_random_a-4": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0,
+      "follows_corruption": 0.20333333333333334
+    },
+    "steer_random_a+8": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0,
+      "follows_corruption": 0.20333333333333334
+    },
+    "steer_random_a-8": {
+      "n": 300,
+      "acc_vs_truth": 0.7933333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.20666666666666667
+    },
+    "steer_random_a+16": {
+      "n": 300,
+      "acc_vs_truth": 0.7933333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.20666666666666667
+    },
+    "steer_random_a-16": {
+      "n": 300,
+      "acc_vs_truth": 0.7933333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.20666666666666667
+    },
+    "steer_other_probe_a+0": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0,
+      "follows_corruption": 0.20333333333333334
+    },
+    "steer_other_probe_a+4": {
+      "n": 300,
+      "acc_vs_truth": 0.7966666666666666,
+      "unparseable": 0,
+      "follows_corruption": 0.20333333333333334
+    },
+    "steer_other_probe_a-4": {
+      "n": 300,
+      "acc_vs_truth": 0.7933333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.20666666666666667
+    },
+    "steer_other_probe_a+8": {
+      "n": 300,
+      "acc_vs_truth": 0.79,
+      "unparseable": 0,
+      "follows_corruption": 0.21
+    },
+    "steer_other_probe_a-8": {
+      "n": 300,
+      "acc_vs_truth": 0.8,
+      "unparseable": 0,
+      "follows_corruption": 0.2
+    },
+    "steer_other_probe_a+16": {
+      "n": 300,
+      "acc_vs_truth": 0.79,
+      "unparseable": 0,
+      "follows_corruption": 0.21
+    },
+    "steer_other_probe_a-16": {
+      "n": 300,
+      "acc_vs_truth": 0.7833333333333333,
+      "unparseable": 0,
+      "follows_corruption": 0.21666666666666667
+    }
+  }
+}
